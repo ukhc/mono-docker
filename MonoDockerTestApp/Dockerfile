@@ -10,4 +10,4 @@ WORKDIR /app
 # just make sure you have the appropirate project.json file included with the targeted framework
 COPY ./out /app
 
-ENTRYPOINT
+ENTRYPOINT ["mono", "MonoDockerTestApp.exe"]
